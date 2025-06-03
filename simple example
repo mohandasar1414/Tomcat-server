@@ -1,0 +1,17 @@
+# A simple java Servlet code to run Using Tomcat server
+
+
+import java.io.*; 
+import javax.servlet.*; 
+import javax.servlet.http.*;
+
+public class HelloServlet extends HttpServlet {
+
+ public void doGet(HttpServletRequest request, HttpServletResponse response)
+ throws ServletException, IOException {
+
+ response.setContentType("text/html"); // Set response type to HTML
+PrintWriter out = response.getWriter(); // Get the output writer to send data to client
+ system.out.println("<h2>Hello from Tomcat!</h2>"); // Write HTML response
+ }
+ } 
